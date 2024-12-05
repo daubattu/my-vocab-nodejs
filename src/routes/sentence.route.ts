@@ -3,14 +3,14 @@ import { SentenceController } from '../controllers';
 
 const router = Router();
 
-router.get('/sentences', SentenceController.getSentences)
+router.get('/sentences', SentenceController.getAll)
 
-router.post('/sentences', SentenceController.createSentence)
+router.post('/sentences', SentenceController.create)
 
-router.get('/sentences/:id', SentenceController.readSentence)
+router.get('/sentences/:id', SentenceController.readById)
 
-router.put('/sentences/:id', SentenceController.updateSentence)
+router.put('/sentences/:id', SentenceController.updateById)
 
-router.delete('/sentences/:id', SentenceController.deleteSentence)
+router.delete('/sentences/:id', SentenceController.deleteById)
 
 export default router;

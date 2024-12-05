@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const sentenceShema = new mongoose.Schema(
+const sentenceSchema = new mongoose.Schema(
   {
     level: {
       type: Number,
@@ -24,4 +24,4 @@ const sentenceShema = new mongoose.Schema(
   }
 )
 
-export default mongoose.model('Sentence', sentenceShema)
+export default mongoose.model('Sentence', sentenceSchema)
