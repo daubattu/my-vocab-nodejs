@@ -3,6 +3,8 @@ import { WordController } from '../controllers';
 
 const router = Router();
 
+router.get('/translate', WordController.getTranslate)
+
 router.get('/words', WordController.getAll)
 
 router.post('/words', WordController.create)
